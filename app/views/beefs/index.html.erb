@@ -1,0 +1,27 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Beefs</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @beefs.each do |beef| %>
+      <tr>
+        <td><%= beef.name %></td>
+        <td><%= link_to 'Show', beef %></td>
+        <td><%= link_to 'Edit', edit_beef_path(beef) %></td>
+        <td><%= link_to 'Destroy', beef, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Beef', new_beef_path %>

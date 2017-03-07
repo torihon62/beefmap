@@ -1,0 +1,49 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Evaluation date:</strong>
+  <%= @evaluation.evaluation_date %>
+</p>
+
+<p>
+  <strong>Place:</strong>
+  <%= @evaluation.place %>
+</p>
+
+<p>
+  <strong>Latitude:</strong>
+  <%= @evaluation.latitude %>
+</p>
+
+<p>
+  <strong>Longitude:</strong>
+  <%= @evaluation.longitude %>
+</p>
+
+<p>
+  <strong>First impression:</strong>
+  <%= @evaluation.first_impression %>
+</p>
+
+<p>
+  <strong>Soft:</strong>
+  <%= @evaluation.soft %>
+</p>
+
+<p>
+  <strong>Juicy:</strong>
+  <%= @evaluation.juicy %>
+</p>
+
+<p>
+  <strong>Taste wide:</strong>
+  <%= @evaluation.taste_wide %>
+</p>
+
+<p>
+  <strong>Cost:</strong>
+  <%= @evaluation.cost %>
+</p>
+
+<%= link_to 'Edit', edit_evaluation_path(@evaluation) %> |
+<%= link_to 'Back', evaluations_path %>

@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @place_to_eat.name %>
+</p>
+
+<p>
+  <strong>Address:</strong>
+  <%= @place_to_eat.address %>
+</p>
+
+<p>
+  <strong>Latitude:</strong>
+  <%= @place_to_eat.latitude %>
+</p>
+
+<p>
+  <strong>Longitude:</strong>
+  <%= @place_to_eat.longitude %>
+</p>
+
+<p>
+  <strong>Tel:</strong>
+  <%= @place_to_eat.tel %>
+</p>
+
+<p>
+  <strong>Url:</strong>
+  <%= @place_to_eat.url %>
+</p>
+
+<%= link_to 'Edit', edit_place_to_eat_path(@place_to_eat) %> |
+<%= link_to 'Back', place_to_eats_path %>

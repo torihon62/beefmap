@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  beef_id: 1
+  place_to_eat_id: 1
+
+two:
+  beef_id: 1
+  place_to_eat_id: 1

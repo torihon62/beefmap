@@ -1,0 +1,2 @@
+class BeefEvaluation < ApplicationRecord
+end

@@ -1,0 +1,2 @@
+class BeefPlaceToEat < ApplicationRecord
+end
