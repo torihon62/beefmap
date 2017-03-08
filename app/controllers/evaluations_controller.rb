@@ -66,9 +66,9 @@ class EvaluationsController < ApplicationController
     def set_evaluation
       @evaluation = Evaluation.find(params[:id])
     end
-
+    
     # Never trust parameters from the scary internet, only allow the white list through.
     def evaluation_params
-      params.require(:evaluation).permit(:evaluation_date, :place, :latitude, :longitude, :first_impression, :soft, :juicy, :taste_wide, :cost)
+      params.require(:evaluation).permit(:evaluation_date, :place, :latitude, :longitude, :first_impression, :soft, :juicy, :taste_wide, :cost, :beef_ids)
     end
 end

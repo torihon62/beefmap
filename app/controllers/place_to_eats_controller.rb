@@ -69,6 +69,6 @@ class PlaceToEatsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def place_to_eat_params
-      params.require(:place_to_eat).permit(:name, :address, :latitude, :longitude, :tel, :url)
+      params.require(:place_to_eat).permit(:name, :address, :latitude, :longitude, :tel, :url, { :beef_ids=> [] })
     end
 end

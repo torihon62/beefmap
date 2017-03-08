@@ -69,6 +69,6 @@ class BeefsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def beef_params
-      params.require(:beef).permit(:name)
+      params.require(:beef).permit(:name, { :category_ids=> [] })
     end
 end

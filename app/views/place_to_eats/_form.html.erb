@@ -17,6 +17,13 @@
   </div>
 
   <div class="field">
+     <%= f.label :beefs %><br>
+    <%= collection_check_boxes(:place_to_eat, :beef_ids, Beef.all, :id, :name ) do |t|  %>
+      <% t.label { t.check_box + t.text } %>
+    <% end %> 
+  </div>
+
+  <div class="field">
     <%= f.label :address %>
     <%= f.text_field :address %>
   </div>

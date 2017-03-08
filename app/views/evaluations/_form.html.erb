@@ -12,6 +12,13 @@
   <% end %>
 
   <div class="field">
+     <%= f.label :beefs %><br>
+    <%= collection_radio_buttons(:evaluation, :beef_ids, Beef.all, :id, :name ) do |t|  %>
+      <% t.label { t.radio_button + t.text } %>
+    <% end %> 
+  </div>
+
+  <div class="field">
     <%= f.label :evaluation_date %>
     <%= f.date_select :evaluation_date %>
   </div>

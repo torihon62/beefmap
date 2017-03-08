@@ -10,13 +10,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170307082418) do
+ActiveRecord::Schema.define(version: 20170308002255) do
 
   create_table "beef_categories", force: :cascade do |t|
     t.integer  "beef_id"
     t.integer  "category_id"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
+    t.index ["beef_id"], name: "index_beef_categories_on_beef_id"
+    t.index ["category_id"], name: "index_beef_categories_on_category_id"
   end
 
   create_table "beef_evaluations", force: :cascade do |t|
@@ -24,6 +26,8 @@ ActiveRecord::Schema.define(version: 20170307082418) do
     t.integer  "evaluation_id"
     t.datetime "created_at",    null: false
     t.datetime "updated_at",    null: false
+    t.index ["beef_id"], name: "index_beef_evaluations_on_beef_id"
+    t.index ["evaluation_id"], name: "index_beef_evaluations_on_evaluation_id"
   end
 
   create_table "beef_place_to_eats", force: :cascade do |t|
@@ -31,6 +35,8 @@ ActiveRecord::Schema.define(version: 20170307082418) do
     t.integer  "place_to_eat_id"
     t.datetime "created_at",      null: false
     t.datetime "updated_at",      null: false
+    t.index ["beef_id"], name: "index_beef_place_to_eats_on_beef_id"
+    t.index ["place_to_eat_id"], name: "index_beef_place_to_eats_on_place_to_eat_id"
   end
 
   create_table "beefs", force: :cascade do |t|

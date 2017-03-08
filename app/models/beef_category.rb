@@ -1,4 +1,4 @@
 class BeefCategory < ApplicationRecord
-    belongs_to :category
-    belongs_to :beef
+  belongs_to :beef, optional: true
+  belongs_to :category
 end
